@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Basics1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;ENDO;_DEBUG;_CONSOLE;BOOSTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))"</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)include</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;ENDO;NDEBUG;_CONSOLE;BOOSTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)include</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Test\ACos_Test.cpp" />
+    <ClCompile Include="..\Test\ASin_Test.cpp" />
+    <ClCompile Include="..\Test\ATan2_Test.cpp" />
+    <ClCompile Include="..\Test\ATan_Test.cpp" />
+    <ClCompile Include="..\Test\Combo_Junkfood.cpp" />
+    <ClCompile Include="..\Test\Combo_VectCrossAddSub.cpp" />
+    <ClCompile Include="..\Test\Combo_VectCrossAddSubMatrixMult.cpp" />
+    <ClCompile Include="..\Test\Combo_VectCrossAddSubMatrixMultCross.cpp" />
+    <ClCompile Include="..\Test\Combo_VectCrossCrossNorm.cpp" />
+    <ClCompile Include="..\Test\Combo_VectLine.cpp" />
+    <ClCompile Include="..\Test\CosSin_Test.cpp" />
+    <ClCompile Include="..\Test\Cos_Test.cpp" />
+    <ClCompile Include="..\Test\Get_Brackets_const.cpp" />
+    <ClCompile Include="..\Test\InvSqrt_Test.cpp" />
+    <ClCompile Include="..\Test\MatrixDestructor_constuctor.cpp" />
+    <ClCompile Include="..\Test\MatrixRotAxisAngle.cpp" />
+    <ClCompile Include="..\Test\MatrixRotInverseOrient.cpp" />
+    <ClCompile Include="..\Test\MatrixRotOrient.cpp" />
+    <ClCompile Include="..\Test\Matrix_Accessor_Get.cpp" />
+    <ClCompile Include="..\Test\Matrix_Accessor_Get_Const.cpp" />
+    <ClCompile Include="..\Test\Matrix_Accessor_Set.cpp" />
+    <ClCompile Include="..\Test\Matrix_addEqual_matrix.cpp" />
+    <ClCompile Include="..\Test\Matrix_add_matrix.cpp" />
+    <ClCompile Include="..\Test\Matrix_AssignmentOperator.cpp" />
+    <ClCompile Include="..\Test\Matrix_Bracket_get.cpp" />
+    <ClCompile Include="..\Test\Matrix_Bracket_set.cpp" />
+    <ClCompile Include="..\Test\Matrix_copy_constructor.cpp" />
+    <ClCompile Include="..\Test\Matrix_default_constructor.cpp" />
+    <ClCompile Include="..\Test\Matrix_det.cpp" />
+    <ClCompile Include="..\Test\Matrix_getinverse.cpp" />
+    <ClCompile Include="..\Test\Matrix_GetTranspose.cpp" />
+    <ClCompile Include="..\Test\Matrix_Inverse.cpp" />
+    <ClCompile Include="..\Test\Matrix_multEqual_matrix.cpp" />
+    <ClCompile Include="..\Test\Matrix_Multiply.cpp" />
+    <ClCompile Include="..\Test\Matrix_Scale.cpp" />
+    <ClCompile Include="..\Test\Matrix_ScaleEquals.cpp" />
+    <ClCompile Include="..\Test\Matrix_set.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_Identity.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_RotX_SET.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_RotY_SET.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_RotZ_SET.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_SCALE.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_SCALE_Vect.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_set_ROW_0.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_set_ROW_1.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_set_ROW_2.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_set_ROW_3.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_Trans.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_Trans_Vect.cpp" />
+    <ClCompile Include="..\Test\Matrix_SET_Zero.cpp" />
+    <ClCompile Include="..\Test\Matrix_subEqual_matrix.cpp" />
+    <ClCompile Include="..\Test\Matrix_sub_matrix.cpp" />
+    <ClCompile Include="..\Test\Matrix_times_Scale.cpp" />
+    <ClCompile Include="..\Test\Matrix_Transpose.cpp" />
+    <ClCompile Include="..\Test\Matrix_UnaryMinus.cpp" />
+    <ClCompile Include="..\Test\Matrix_UnaryPlus.cpp" />
+    <ClCompile Include="..\Test\Matrix_unary_equal_Minus.cpp" />
+    <ClCompile Include="..\Test\Matrix_unary_equal_Plus.cpp" />
+    <ClCompile Include="..\Test\Matrix_vector_constructor.cpp" />
+    <ClCompile Include="..\Test\Sin_Test.cpp" />
+    <ClCompile Include="..\Test\Special_isEqual_false2.cpp" />
+    <ClCompile Include="..\Test\Special_isEqual_true.cpp" />
+    <ClCompile Include="..\Test\Special_isIdentity_false.cpp" />
+    <ClCompile Include="..\Test\Special_isIdentity_true.cpp" />
+    <ClCompile Include="..\Test\Special_isRotation_false.cpp" />
+    <ClCompile Include="..\Test\Special_isRotation_true.cpp" />
+    <ClCompile Include="..\Test\Special_Matrix_Identity.cpp" />
+    <ClCompile Include="..\Test\Special_Matrix_SCALE.cpp" />
+    <ClCompile Include="..\Test\Special_Matrix_SCALE_Vect.cpp" />
+    <ClCompile Include="..\Test\Special_Matrix_Trans.cpp" />
+    <ClCompile Include="..\Test\Special_Matrix_Trans_Vect.cpp" />
+    <ClCompile Include="..\Test\Special_Matrix_Zero.cpp" />
+    <ClCompile Include="..\Test\Special_RotX.cpp" />
+    <ClCompile Include="..\Test\Special_RotXYZ_Constructor.cpp" />
+    <ClCompile Include="..\Test\Special_RotY.cpp" />
+    <ClCompile Include="..\Test\Special_RotZ.cpp" />
+    <ClCompile Include="..\Test\Sqrt_Test.cpp" />
+    <ClCompile Include="..\Test\Tan_Test.cpp" />
+    <ClCompile Include="..\Test\Vect_Accessors.cpp" />
+    <ClCompile Include="..\Test\Vect_AddSub.cpp" />
+    <ClCompile Include="..\Test\Vect_Boolean.cpp" />
+    <ClCompile Include="..\Test\Vect_Bracket.cpp" />
+    <ClCompile Include="..\Test\Vect_Constructors.cpp" />
+    <ClCompile Include="..\Test\Vect_Functions.cpp" />
+    <ClCompile Include="..\Test\Vect_Matrix.cpp" />
+    <ClCompile Include="..\Test\Vect_Proxy.cpp" />
+    <ClCompile Include="..\Test\Vect_Scale.cpp" />
+    <ClCompile Include="..\Test\Vect_Set.cpp" />
+    <ClCompile Include="..\Test\Vect_Start_Here.cpp" />
+    <ClCompile Include="..\Test\Vect_unary.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_UnitTestConfiguration.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Math.vcxproj">
+      <Project>{d999076e-f08b-48fc-b732-e43e13041a07}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

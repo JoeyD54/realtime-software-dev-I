@@ -1,0 +1,63 @@
+//----------------------------------------------------------------------------
+// Copyright 2022, Ed Keenan, all rights reserved.
+//----------------------------------------------------------------------------
+
+#include "MathEngine.h"
+#include "Mesh.h"
+#include "GraphicsObject_ColorByPosition.h"
+#include "Camera.h"
+
+using namespace Azul;
+
+// ToDo fix this...
+extern Camera *pCam;
+
+GraphicsObject_ColorByPosition::GraphicsObject_ColorByPosition(const Mesh *const _pMesh, const ShaderObject *const pShaderObj)
+	: GraphicsObject(_pMesh, pShaderObj)
+{
+	assert(pMesh);
+	assert(pShaderObj);
+	assert(poWorld);
+}
+
+void GraphicsObject_ColorByPosition::SetState()
+{
+	glEnable(GL_CULL_FACE);
+	glFrontFace(GL_CW);
+}
+
+void GraphicsObject_ColorByPosition::SetDataGPU()
+{
+	// use this shader
+	this->pShaderObj->SetActive();
+
+	// set the vao
+	glBindVertexArray(this->GetMesh()->vao);
+
+	Matrix world = this->GetWorld();
+	Matrix view = pCam->getViewMatrix();
+	Matrix proj = pCam->getProjMatrix();
+
+	glUniformMatrix4fv(this->pShaderObj->GetLocation("proj_matrix"), 1, GL_FALSE, (float *)&proj);
+	glUniformMatrix4fv(this->pShaderObj->GetLocation("view_matrix"), 1, GL_FALSE, (float*)&view);
+	glUniformMatrix4fv(this->pShaderObj->GetLocation("world_matrix"), 1, GL_FALSE, (float *) &world);
+
+}
+
+void GraphicsObject_ColorByPosition::Draw()
+{
+	//// draw
+	//glDrawArrays(GL_TRIANGLES, 0, (3 * this->GetMesh()->numVerts));
+
+	//The starting point of the IBO
+	glDrawElements(GL_TRIANGLES, 3 * this->GetMesh()->numTris, GL_UNSIGNED_INT, 0);
+}
+
+void GraphicsObject_ColorByPosition::RestoreState()
+{
+	glEnable(GL_CULL_FACE);
+	glFrontFace(GL_CW);
+}
+
+
+// --- End of File ---

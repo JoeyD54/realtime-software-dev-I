@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{0b776af2-bfcb-4635-9387-79853b59c5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\Textures">
+      <UniqueIdentifier>{735b2466-4543-41bc-ba65-53cb5db360b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Shader">
+      <UniqueIdentifier>{767083f7-1c74-4a76-8fb3-5e46073b9658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GraphicsObject">
+      <UniqueIdentifier>{6c66ef25-99b7-4296-b6cd-661d2cb0b222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Input">
+      <UniqueIdentifier>{9c976ddd-112d-4ada-9e6a-1233e8eda3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject">
+      <UniqueIdentifier>{158cfd40-1062-4c37-8c84-dfaf1389b759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game">
+      <UniqueIdentifier>{e017e9c6-ff0c-4c2a-ab60-a6a521c94eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Mesh">
+      <UniqueIdentifier>{03d9f2a8-7c5d-4c29-b182-4de2bb5445a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Diagram_references">
+      <UniqueIdentifier>{fd3f195f-c15b-4fb5-8f48-93ea17bcced6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="RuleSet.ruleset" />
+    <None Include="_GraphicsDiagram.cd">
+      <Filter>src</Filter>
+    </None>
+    <None Include="colorRender.fs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="colorRender.vs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="render.fs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="render.vs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="textureRender.fs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="textureRender.vs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="_TextureDiagram.cd">
+      <Filter>src</Filter>
+    </None>
+    <None Include="nullRender.fs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="nullRender.vs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="_Mesh_Diagram.cd">
+      <Filter>src</Filter>
+    </None>
+    <None Include="texturePointLightDiff.fs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="texturePointLightDiff.vs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="Engine.vcxproj.user" />
+    <None Include="constColorRender.fs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+    <None Include="constColorRender.vs.glsl">
+      <Filter>src\Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="StringThis.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject_ColorByPosition.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject_FlatTexture.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject_Wireframe.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObject.h">
+      <Filter>src\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>src\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMan.h">
+      <Filter>src\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMaterial.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TGA.h">
+      <Filter>src\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject_Null.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="NullMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="InputMan.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTest.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>src\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectMan.h">
+      <Filter>src\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshNode.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshNodeMan.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderMan.h">
+      <Filter>src\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Manager\include\DLink.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Manager\include\DLinkIterator.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Manager\include\DLinkMan.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Manager\include\Iterator.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Manager\include\ListBase.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Manager\include\ManBase.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Math\include\Matrix.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Math\include\Vect.h">
+      <Filter>_Diagram_references</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject_TextureLight.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject_ConstColor.h">
+      <Filter>src\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshFileHdr.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="PyramidMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraMan.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="TriPyramidMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="DiamondMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="StringThis.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject_ColorByPosition.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject_FlatTexture.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject_Wireframe.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObject.cpp">
+      <Filter>src\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>src\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMan.cpp">
+      <Filter>src\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject_Null.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="NullMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="InputMan.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTest.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>src\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectMan.cpp">
+      <Filter>src\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshNode.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshNodeMan.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderMan.cpp">
+      <Filter>src\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject_TextureLight.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject_ConstColor.cpp">
+      <Filter>src\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshFileHdr.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="PyramidMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraMan.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TriPyramidMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="DiamondMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Duckweed.tga">
+      <Filter>src\Textures</Filter>
+    </Image>
+    <Image Include="RedBrick.tga">
+      <Filter>src\Textures</Filter>
+    </Image>
+    <Image Include="Rocks.tga">
+      <Filter>src\Textures</Filter>
+    </Image>
+    <Image Include="Stone.tga">
+      <Filter>src\Textures</Filter>
+    </Image>
+    <Image Include="kt_stone_1.tga">
+      <Filter>src\Textures</Filter>
+    </Image>
+    <Image Include="Kt_Stone1.tga">
+      <Filter>src\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

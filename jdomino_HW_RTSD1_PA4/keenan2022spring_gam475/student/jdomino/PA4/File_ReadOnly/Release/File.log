@@ -1,0 +1,30 @@
+﻿  File.cpp
+  SimpleCloseClose_Test.cpp
+  SimpleCloseFail_Test.cpp
+  SimpleHandleValid_Test.cpp
+  SimpleOpenClose_Test.cpp
+  SimpleOpenERROR_Test.cpp
+  SimpleOpenOpen_Test.cpp
+  SimpleOpen_Test.cpp
+  SimpleWriteFailBuffer_Test.cpp
+  SimpleWriteFail_Test.cpp
+  SimpleWriteRead2_Test.cpp
+  SimpleWriteReadBufferError_Test.cpp
+  SimpleWriteReadFail_Test.cpp
+  SimpleWriteReadFlushError_Test.cpp
+  SimpleWriteReadFlush_Test.cpp
+  SimpleWriteReadSeekError_Test.cpp
+  SimpleWriteReadSEEK_Test.cpp
+  SimpleWriteReadTellError_Test.cpp
+  SimpleWriteReadTell_Test.cpp
+  SimpleWriteRead_Test.cpp
+  SimpleWrite_Test.cpp
+  main.cpp
+C:\Users\playd\Perforce\Real Time Software Dev I\jdomino_HW_RTSD1_PA4\keenan2022spring_gam475\student\jdomino\PA4\File\File.cpp(50,29): warning C4390: ';': empty controlled statement found; is this the intent?
+C:\Users\playd\Perforce\Real Time Software Dev I\jdomino_HW_RTSD1_PA4\keenan2022spring_gam475\student\jdomino\PA4\File\File.cpp(96,51): warning C4805: '==': unsafe mix of type 'BOOL' and type 'bool' in operation
+C:\Users\playd\Perforce\Real Time Software Dev I\jdomino_HW_RTSD1_PA4\keenan2022spring_gam475\student\jdomino\PA4\File\File.cpp(96,56): warning C4390: ';': empty controlled statement found; is this the intent?
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 271 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  File.vcxproj -> C:\Users\playd\Perforce\Real Time Software Dev I\jdomino_HW_RTSD1_PA4\keenan2022spring_gam475\student\jdomino\PA4\Release\File.exe
